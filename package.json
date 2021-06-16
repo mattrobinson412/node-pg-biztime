@@ -4,7 +4,7 @@
   "description": "Biztime API application for Springboard.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "app.test.js, routes/companies.test.js, routes/industries.test.js, routes/invoices.test.js",
     "start": "node server.js"
   },
   "author": "MAR",
@@ -12,8 +12,10 @@
   "dependencies": {
     "axios": "^0.21.1",
     "express": "^4.17.1",
+    "jest": "^27.0.4",
     "jquery": "^3.6.0",
     "nodemon": "^2.0.7",
-    "pg": "^8.6.0"
+    "pg": "^8.6.0",
+    "slugify": "^1.5.3"
   }
 }
