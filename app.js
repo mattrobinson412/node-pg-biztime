@@ -1,12 +1,17 @@
 /** BizTime express application. */
-
+const db = require("../db");
 
 const express = require("express");
 
 const app = express();
-const ExpressError = require("./expressError")
+const comRoutes = require("./routes/companies");
+const invRoutes = require("./routes/invoices");
+const ExpressError = require("./expressError");
 
 app.use(express.json());
+
+app.use("/companies", comRoutes);
+app.use("/invoices", invRoutes);
 
 
 /** 404 handler */
